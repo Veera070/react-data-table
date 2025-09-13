@@ -1,0 +1,71 @@
+
+.card {
+  margin: auto;
+  padding: 1rem;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+}
+
+body, #root {
+  
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  background: #262626;     
+}
+
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 12px;
+}
+
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 12px;
+  text-align: center;
+  color: #000;
+}
+
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background-color: #f1f5ff;
+  cursor: pointer;
+}
+
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background-color: #cfe2ff !important;
+  color: #000;
+}
+
+
+.p-paginator {
+  border: none;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+
+.p-paginator .p-paginator-page,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+
+.p-datatable .p-checkbox {
+  display: flex;
+  justify-content: center;
+}
