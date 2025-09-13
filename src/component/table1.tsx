@@ -5,6 +5,7 @@ import { Button } from "primereact/button";
 import { InputNumber } from "primereact/inputnumber";
 import { Paginator } from "primereact/paginator";
 
+
 function Table() {
 const [allRows, setAllRows] = useState([]);
 const [currentPageRows, setCurrentPageRows] = useState([]);
@@ -25,7 +26,7 @@ useEffect(() => {
         fetch(url)
         .then((res) => res.json())
         .then((json) =>
-            json.data.map((item) => ({
+            json.data.map((item:any) => ({
             title: item.title || "N/A",
             place_of_origin: item.place_of_origin || "Unknown",
             artist_display: item.artist_display || "Unknown",
